@@ -5,7 +5,10 @@ const HomeScreen = ({navigation}) => {
   return(
     <View>
       <TouchableOpacity onPress={()=>navigation.navigate('AdvancedColorScreen')}>
-        <Text>Advanced Color Screen</Text>
+        <Text style={styles.text}>Advanced Color Screen</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=> navigation.navigate('CorrectAdvancedColorScreen')}>
+        <Text style={styles.text}>Correct Advanced Color Screen</Text>
       </TouchableOpacity>
     </View>
   );
@@ -13,7 +16,8 @@ const HomeScreen = ({navigation}) => {
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    marginVertical: 15
   }
 });
 

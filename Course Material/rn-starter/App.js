@@ -2,11 +2,13 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import HomeScreen from "./src/screens/HomeScreen";
 import AdvancedColorScreen from "./src/screens/AdvancedColorScreen";
+import CorrectAdvancedColorScreen from "./src/screens/CorrectAdvanceColorScreen";
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
-    AdvancedColorScreen:AdvancedColorScreen
+    AdvancedColorScreen:AdvancedColorScreen,
+    CorrectAdvancedColorScreen: CorrectAdvancedColorScreen,
   },
   {
     initialRouteName: "Home",
