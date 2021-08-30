@@ -10,6 +10,9 @@ const HomeScreen = ({navigation}) => {
       <TouchableOpacity onPress={()=> navigation.navigate('CorrectAdvancedColorScreen')}>
         <Text style={styles.text}>Correct Advanced Color Screen</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={()=> navigation.navigate('Counters')}>
+        <Text style={styles.text}>Counters</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -17,7 +20,8 @@ const HomeScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
-    marginVertical: 15
+    marginVertical: 15,
+    textAlign: 'center'
   }
 });
 
