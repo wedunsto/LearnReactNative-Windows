@@ -13,6 +13,9 @@ const HomeScreen = ({navigation}) => {
       <TouchableOpacity onPress={()=> navigation.navigate('Counters')}>
         <Text style={styles.text}>Counters</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={()=> navigation.navigate('Text')}>
+        <Text style={styles.text}>Text Input</Text>
+      </TouchableOpacity>
     </View>
   );
 };

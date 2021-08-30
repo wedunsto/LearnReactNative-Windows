@@ -4,6 +4,7 @@ import HomeScreen from "./src/screens/HomeScreen";
 import AdvancedColorScreen from "./src/screens/AdvancedColorScreen";
 import CorrectAdvancedColorScreen from "./src/screens/CorrectAdvanceColorScreen";
 import Counters from "./src/screens/Counters";
+import TextInput from './src/screens/TextInput';
 
 const navigator = createStackNavigator(
   {
@@ -11,6 +12,7 @@ const navigator = createStackNavigator(
     AdvancedColorScreen: AdvancedColorScreen,
     CorrectAdvancedColorScreen: CorrectAdvancedColorScreen,
     Counters: Counters,
+    Text: TextInput,
   },
   {
     initialRouteName: "Home",
