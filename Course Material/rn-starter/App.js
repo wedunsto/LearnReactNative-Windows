@@ -6,6 +6,11 @@ import CorrectAdvancedColorScreen from "./src/screens/CorrectAdvanceColorScreen"
 import Counters from "./src/screens/Counters";
 import TextInput from './src/screens/TextInput';
 import PasswordValidator from "./src/screens/PasswordValidator";
+import BoxScreen from "./src/screens/BoxScreen";
+import FlexScreen from "./src/screens/FlexScreen";
+import FlexDirection from "./src/screens/FlexDirection";
+import JustifyContent from "./src/screens/JustifyContent";
+import FormatExercise from "./src/screens/FormatExercise";
 
 const navigator = createStackNavigator(
   {
@@ -14,7 +19,12 @@ const navigator = createStackNavigator(
     CorrectAdvancedColorScreen: CorrectAdvancedColorScreen,
     Counters: Counters,
     Text: TextInput,
-    PassVal: PasswordValidator
+    PassVal: PasswordValidator,
+    BoxScreen: BoxScreen,
+    FlexScreen: FlexScreen,
+    FlexDirection: FlexDirection,
+    JustifyContent: JustifyContent,
+    FormatExercise: FormatExercise
   },
   {
     initialRouteName: "Home",

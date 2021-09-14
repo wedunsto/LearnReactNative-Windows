@@ -19,6 +19,18 @@ const HomeScreen = ({navigation}) => {
       <TouchableOpacity onPress={()=> navigation.navigate('PassVal')}>
         <Text style={styles.text}>Password Validator</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={()=> navigation.navigate('BoxScreen')}>
+        <Text style={styles.text}>Box Screen</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=> navigation.navigate('FlexScreen')}>
+        <Text style={styles.text}>Flex Screen</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=> navigation.navigate('FlexDirection')}>
+        <Text style={styles.text}>Flex Direction</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=> navigation.navigate('FormatExercise')}>
+        <Text style={styles.text}>Justify Content</Text>
+      </TouchableOpacity>
     </View>
   );
 };

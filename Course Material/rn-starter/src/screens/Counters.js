@@ -28,8 +28,7 @@ const Counters =()=>{
     //Destructure useReducer
     const [state, dispatch] = useReducer(reducer,{value: 0});
 
-    return(
-        <View>
+    return(<View>
             <Text style={styles.titleText}>Counter</Text>
             <CounterComponents
             //Call dispatch in the child component
@@ -38,9 +37,7 @@ const Counters =()=>{
             />
             <Text style={{fontSize: 20, textAlign: 'center'}}>Current Count</Text>
             <Text style={styles.titleText}>{state.value}</Text>
-        </View>
-    )
-};
+        </View>)};
 
 const styles = StyleSheet.create({
     titleText:{
